@@ -1,0 +1,169 @@
+🐱 Challenge: Obedient Cat
+
+    Author: syreal
+
+    Category: General Skills
+
+    Difficulty: Very Easy
+
+    Description:
+
+        "This file has a flag in plain sight (aka 'in-the-clear'). Download flag."
+
+🔍 Objective:
+
+Download the given file and find the flag that's stored in it without any encryption or encoding.
+🛠️ Tools Required:
+
+    Linux terminal / command line
+
+    cat command
+
+🛠️ What I Did:
+
+    I downloaded the file from the challenge page.
+
+    Then opened my terminal and went to the Downloads folder:
+
+cd Downloads
+
+I checked if the file was there:
+
+ls
+
+✅ Yep — the file flag showed up.
+
+I used the classic cat command to read its contents:
+
+cat flag
+
+And boom! There it was:
+
+    picoCTF{s4n1ty_v3r1f13d_2fd6ed29}
+
+🚩 Flag:
+
+picoCTF{s4n1ty_v3r1f13d_2fd6ed29}
+
+🔐 Challenge: Super SSH – picoCTF Beginner Guide
+
+    Author: Jeffery John
+
+    Category: General Skills / Networking
+
+    Difficulty: Easy
+
+📝 Description (Before Launching Instance)
+
+    “Using a Secure Shell (SSH) is going to be pretty important.”
+
+This is the brief teaser shown before launching the challenge — just a heads-up that SSH is involved.
+📝 Updated Description (After Launching Instance)
+
+    Using a Secure Shell (SSH) is going to be pretty important.
+    Can you SSH as ctf-player to titan.picoctf.net at port 65341 to get the flag?
+    You'll also need the password 83dcefb7.
+    If asked, accept the fingerprint with yes.
+    If your device doesn't have a shell, you can use:
+    🔗 https://webshell.picoctf.org
+    If you're not sure what a shell is, check out the Primer:
+    📖 https://primer.picoctf.com/#_the_shell
+
+🧠 What’s This About?
+
+This challenge introduces you to SSH (Secure Shell) — a protocol that lets you securely connect to and control remote machines. It's a must-know for any cybersecurity enthusiast or CTF player.
+🛠️ Steps to Solve
+
+I opened my terminal and ran the following command (given by the challenge):
+
+ssh ctf-player@titan.picoctf.net -p 65341
+
+This prompted a warning about the host authenticity:
+
+The authenticity of host '[titan.picoctf.net]:65341' can't be established.
+ED25519 key fingerprint is SHA256:4S9EbTSSRZm32I+cdM5TyzthpQryv5kudRP9PIKT7XQ.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+
+I typed:
+
+yes
+
+Then it asked for the password:
+
+ctf-player@titan.picoctf.net's password:
+
+I entered the password:
+
+83dcefb7
+
+And boom! 🎉 Got the flag immediately:
+
+Welcome ctf-player, here's your flag: picoCTF{s3cur3_c0nn3ct10n_8969f7d3}
+Connection to titan.picoctf.net closed.
+🚩 Flag:
+
+picoCTF{s3cur3_c0nn3ct10n_8969f7d3}
+
+💬 What I Learned:
+
+    How to use ssh to connect to remote servers over specific ports
+
+    Why trusting fingerprints is a normal part of SSH authentication
+
+    That CTFs often simulate real-world scenarios, like remote access challenges
+
+    And that sometimes... the flag just says hi 😄
+
+🐾 Challenge: What’s a Net Cat? – picoCTF Beginner Guide
+
+    Author: Sanjay C / Danny Tunitis
+
+    Category: General Skills / Networking
+
+    Difficulty: Easy
+
+📝 Description
+
+    "Using netcat (nc) is going to be pretty important. Can you connect to jupiter.challenges.picoctf.org at port 64287 to get the flag?"
+
+This is one of those short-and-sweet challenges that introduces you to a powerful networking tool called netcat.
+🧠 What’s This About?
+
+This challenge teaches you how to use Netcat (nc) — often called the "Swiss Army knife of networking." It's used to send or receive raw data over TCP or UDP connections.
+
+In CTFs and cybersecurity, nc is commonly used to:
+
+    Connect to remote services (like this one!)
+
+    Set up reverse shells
+
+    Create simple servers or listeners
+
+🛠️ Tools Needed:
+
+    Terminal with nc installed
+    (Almost all Linux, macOS, and WSL setups have it pre-installed)
+
+🚀 Steps to Solve:
+
+    I opened my terminal and typed:
+
+nc jupiter.challenges.picoctf.org 64287
+
+The connection was successful, and the server instantly responded:
+
+    You're on your way to becoming the net cat master
+    picoCTF{nEtCat_Mast3ry_284be8f7}
+
+No interaction needed — the flag came right away!
+🚩 Flag:
+
+picoCTF{nEtCat_Mast3ry_284be8f7}
+
+💬 What I Learned:
+
+    How to use the nc command to connect to a remote server over a given port.
+
+    That sometimes, just opening a connection is enough to receive the flag.
+
+    Why netcat is one of the most commonly used tools in CTFs — it’s fast, lightweight, and super versatile!
