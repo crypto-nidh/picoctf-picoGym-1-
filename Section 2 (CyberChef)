@@ -1,0 +1,170 @@
+🔐 Mod 26 – picoCTF Beginner Guide
+
+Author: Pandu
+Category: Cryptography
+Difficulty: Easy
+📝 Description
+
+Cryptography can be easy, do you know what ROT13 is?
+Ciphertext:
+cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_nSkgmDJE}
+🧠 What’s This About?
+
+This challenge is based on ROT13, a basic cipher that shifts letters 13 positions forward. It’s reversible — applying ROT13 again gives you the original text.
+🛠️ Tool Used
+
+    CyberChef (https://gchq.github.io/CyberChef/)
+
+🧩 Steps
+
+    Open CyberChef.
+
+    Add the ROT13 operation.
+
+    Ensure "Rotate lower case chars" and "Rotate upper case chars" are checked.
+
+    Paste the ciphertext into the input box.
+
+    The output appears instantly.
+
+✅ Output
+
+picoCTF{next_time_I'll_try_2_rounds_of_rot13_aFxtzQWR}
+🧠 What I Learned
+
+    ROT13 is symmetric.
+
+    CyberChef is useful for basic decoding.
+
+    Even simple ciphers can hide flags well.
+
+
+🔐 Warmed Up – picoCTF Beginner Guide
+
+Author: Sanjay C / Danny Tunitis
+Category: General Skills
+Difficulty: Easy
+📝 Description
+
+What is 0x3D (base 16) in decimal (base 10)?
+🧠 What’s This About?
+
+This is a simple hexadecimal to decimal conversion challenge — testing your understanding of number systems used in computing.
+🧩 Solution
+
+0x3D is a hexadecimal number.
+To convert it to decimal:
+
+    0x3D = 3 × 16 + 13 = 48 + 13 = 61
+
+    Final answer: 61
+
+You can also use the terminal:
+
+echo $((0x3D))
+
+✅ Flag
+
+picoCTF{61}
+
+🧠 What I Learned
+
+    Hex (base 16) uses 0–9 and A–F (A=10, F=15).
+
+    Prefix 0x denotes hexadecimal.
+
+    Quick mental or terminal-based conversions are handy in CTFs.
+
+🔐 2Warm – picoCTF Beginner Guide
+
+Author: Sanjay C / Danny Tunitis
+Category: General Skills
+Difficulty: Easy
+📝 Description
+
+Can you convert the number 42 (base 10) to binary (base 2)?
+🧠 What’s This About?
+
+This challenge tests your ability to convert a decimal number to binary, a fundamental concept in computer science.
+🧩 Solution
+
+Convert 42 to binary:
+
+    42 ÷ 2 = 21 → remainder 0
+
+    21 ÷ 2 = 10 → remainder 1
+
+    10 ÷ 2 = 5 → remainder 0
+
+    5 ÷ 2 = 2 → remainder 1
+
+    2 ÷ 2 = 1 → remainder 0
+
+    1 ÷ 2 = 0 → remainder 1
+
+Write remainders in reverse: 101010
+
+Or use terminal:
+
+echo "obase=2; 42" | bc
+
+✅ Flag
+
+picoCTF{101010}
+
+🧠 What I Learned
+
+    Binary is base 2, using only 0 and 1.
+
+    Decimal to binary conversion is common in CTFs.
+
+    You can use tools like bc in Linux to convert between number systems.
+
+🔐 Bases – picoCTF Beginner Guide
+
+Author: Sanjay C / Danny T
+Category: General Skills / Cryptography
+Difficulty: Easy
+📝 Description
+
+What does this string mean?
+
+bDNhcm5fdGgzX3IwcDM1
+
+Hint: It has something to do with bases.
+🧠 What’s This About?
+
+This is a Base64 decoding challenge. The string given looks like Base64 — a common encoding format used to safely transmit binary data as ASCII text.
+🛠️ Tool Used
+
+    CyberChef or command-line base64 decoder
+
+🧩 Solution
+
+Decode the string using any of the following:
+
+CyberChef:
+
+    Drag "From Base64" into the Recipe
+
+    Paste input: bDNhcm5fdGgzX3IwcDM1
+
+Linux terminal:
+
+echo bDNhcm5fdGgzX3IwcDM1 | base64 -d
+
+Output:
+
+l3arn_th3_r0p35
+
+✅ Flag
+
+picoCTF{l3arn_th3_r0p35}
+
+🧠 What I Learned
+
+    Base64 encoding is often used to obfuscate data in CTFs
+
+    The output is usually readable text or a flag
+
+    Tools like CyberChef or terminal commands make decoding quick and easy
