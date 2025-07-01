@@ -1,4 +1,4 @@
-*Wave a Flag*
+### **Wave a Flag**
 
 Category: General Skills
 Points: 10
@@ -34,7 +34,7 @@ picoCTF{b1scu1ts_4nd_gr4vy_30e77291}
 💡 Learning
 The strings utility is useful to extract human-readable text from binary files and often reveals flags or hidden messages in CTF challenges.
 
-*Tab, Tab, Attack*
+### **Tab, Tab, Attack**
 
 Category: General Skills
 Points: 10
@@ -75,7 +75,7 @@ picoCTF{l3v3l_up!_t4k3_4_r35t!_524e3dc4}
     strings quickly extracts human-readable data from binary files.
     There is no need to move into nested directories using cd; just use the full path when running commands like strings.
 
-*Insp3ct0r*
+### **Insp3ct0r**
 
 Category: Web Exploitation
 Points: 20
@@ -132,7 +132,7 @@ picoCTF{tru3_d3t3ct1ve_0r_ju5t_lucky?f10be399}
     Check all linked CSS and JS files for additional hidden data.
     Note down where each flag part is located for clear documentation and revision.
 
-*Strings it*
+### **Strings it**
 
 Category: General Skills
 Points: 10
@@ -176,7 +176,7 @@ picoCTF{5tRIng5_1T_7f766a23}
     Combining it with grep filters large outputs to quickly find flags.
     No need to run unknown binaries, reducing risk while solving CTF challenges safely.
 
-*First Grep*
+### **First Grep**
 
 Category: General Skills
 Points: 10
@@ -219,7 +219,7 @@ picoCTF{grep_is_good_to_find_things_f77e0797}
     grep is a powerful tool to search specific keywords in large files quickly.
     Always use it with cat or directly as grep -i pico file to extract flags efficiently during CTF challenges.
 
-*Where are the robots*
+### **Where are the robots**
 
 Category: Web Exploitation
 Points: 10
